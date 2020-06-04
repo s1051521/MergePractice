@@ -46,23 +46,23 @@ $(document).keydown(function(event){
     event.preventDefault();
     //
     //
-    switch(event.code){
-        case "ArrowLeft":
+    switch(event.which){
+        case 37:
             targetImgMainX = currentImgMainX-200;
             targetImgMainY = currentImgMainY;
             cutImagePositionX = 175;
             break;
-        case "ArrowUp":
+        case 38:
             targetImgMainX = currentImgMainX;
             targetImgMainY = currentImgMainY-200;
             cutImagePositionX = 355;
             break;
-        case "ArrowRight":
+        case 39:
             targetImgMainX = currentImgMainX+200;
             targetImgMainY = currentImgMainY;
             cutImagePositionX = 540;
             break;
-        case "ArrowDown":
+        case 40:
             targetImgMainX = currentImgMainX;
             targetImgMainY = currentImgMainY+200;
             cutImagePositionX = 0;
@@ -96,7 +96,7 @@ $(document).keydown(function(event){
             case 1:
                 $("#talkBox").text("有山");
                 break;
-            case2:
+            case 2:
                 $("#talkBox").text("抵達終點");
                 break;
             case 3:
@@ -104,4 +104,4 @@ $(document).keydown(function(event){
                 break;
         }
     
-});
+}); 
